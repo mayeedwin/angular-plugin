@@ -4,12 +4,26 @@ An opinionated Angular development assistant for Claude Code. Generate, review, 
 
 ## Install
 
-```bash
-# Test locally
-claude --plugin-dir /path/to/angular-plugin
+### From GitHub (available now)
 
-# Install from marketplace (coming soon)
-claude plugin install ng
+```bash
+# 1. Add the marketplace
+/plugin marketplace add mayeedwin/angular-plugin
+
+# 2. Install the plugin
+/plugin install ng@angular-plugin
+```
+
+### From Anthropic marketplace (pending review)
+
+```bash
+/plugin install ng
+```
+
+### Local development
+
+```bash
+claude --plugin-dir /path/to/angular-plugin
 ```
 
 ## Commands
@@ -120,7 +134,8 @@ All patterns reference [angular.dev/llms.txt](https://angular.dev/llms.txt).
 - [x] Agents: `angular-architect`, `angular-reviewer`
 - [x] Hooks: auto-lint on file writes
 - [x] LSP: TypeScript language server config
-- [ ] Publish to Anthropic plugin marketplace
+- [x] Self-hosted marketplace via GitHub (`/plugin marketplace add mayeedwin/angular-plugin`)
+- [ ] Publish to Anthropic plugin marketplace (submitted — pending review)
 
 ## Contributing
 
@@ -140,10 +155,10 @@ This installs a local `commit-msg` hook that validates your commit messages.
 type(scope): description
 ```
 
-| Part | Values |
-|---|---|
-| `type` | `feat` `fix` `docs` `style` `refactor` `test` `chore` `perf` `ci` `build` `hotfix` |
-| `scope` | `skills` `commands` `agents` `hooks` `docs` `plugin` `scripts` `readme` |
+| Part    | Values                                                                             |
+| ------- | ---------------------------------------------------------------------------------- |
+| `type`  | `feat` `fix` `docs` `style` `refactor` `test` `chore` `perf` `ci` `build` `hotfix` |
+| `scope` | `skills` `commands` `agents` `hooks` `docs` `plugin` `scripts` `readme`            |
 
 ```bash
 feat(skills): add angular-signals skill
@@ -156,11 +171,11 @@ chore(plugin): bump version to 1.0.0
 
 This repo ships instructions for Claude Code, GitHub Copilot, and other AI agents:
 
-| File | Purpose |
-|---|---|
-| [`CLAUDE.md`](./CLAUDE.md) | Claude Code — detailed rules and conventions |
-| [`AGENTS.md`](./AGENTS.md) | Other AI agents (Codex, Gemini, etc.) |
-| [`.github/copilot-instructions.md`](./.github/copilot-instructions.md) | GitHub Copilot |
+| File                                                                   | Purpose                                      |
+| ---------------------------------------------------------------------- | -------------------------------------------- |
+| [`CLAUDE.md`](./CLAUDE.md)                                             | Claude Code — detailed rules and conventions |
+| [`AGENTS.md`](./AGENTS.md)                                             | Other AI agents (Codex, Gemini, etc.)        |
+| [`.github/copilot-instructions.md`](./.github/copilot-instructions.md) | GitHub Copilot                               |
 
 When using Claude Code in this repo, it automatically reads `CLAUDE.md` and applies the conventions.
 

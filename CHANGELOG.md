@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] — 2026-02-28
+
+### Added
+- `.claude-plugin/marketplace.json` — self-hosted marketplace, install via `/plugin marketplace add mayeedwin/angular-plugin`
+- Commit style guide with `commit-message-hook.js` validation (adapted from production Angular app)
+- `CLAUDE.md` — Claude Code AI instructions for contributors
+- `AGENTS.md` — multi-agent AI instructions (Codex, Gemini, etc.)
+- `.github/copilot-instructions.md` — GitHub Copilot conventions
+- `scripts/install-hooks.sh` — one-time git hook setup for contributors
+
 ## [0.1.0] — 2026-02-28
 
 ### Added

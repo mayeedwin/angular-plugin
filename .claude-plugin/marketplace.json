@@ -1,0 +1,29 @@
+{
+  "name": "angular-plugin",
+  "owner": {
+    "name": "Maye Edwin",
+    "email": "mayeedwin@gmail.com"
+  },
+  "metadata": {
+    "description": "Opinionated Angular development tools for Claude Code — generate, review, test, migrate, and document Angular apps."
+  },
+  "plugins": [
+    {
+      "name": "ng",
+      "source": {
+        "source": "github",
+        "repo": "mayeedwin/angular-plugin"
+      },
+      "description": "Angular development assistant — generate, review, test and migrate Angular apps following an opinionated, production-proven structure",
+      "version": "1.0.0",
+      "author": {
+        "name": "Maye Edwin",
+        "email": "mayeedwin@gmail.com"
+      },
+      "homepage": "https://github.com/mayeedwin/angular-plugin",
+      "repository": "https://github.com/mayeedwin/angular-plugin",
+      "license": "MIT",
+      "keywords": ["angular", "typescript", "ngrx", "rxjs", "standalone", "signals", "generate", "review"]
+    }
+  ]
+}

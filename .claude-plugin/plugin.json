@@ -1,6 +1,6 @@
 {
   "name": "ng",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Angular development assistant — generate, review, test and migrate Angular apps following an opinionated, production-proven structure",
   "author": {
     "name": "Maye Edwin",
