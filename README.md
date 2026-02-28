@@ -1,6 +1,6 @@
 # ng — Angular Plugin for Claude Code
 
-An opinionated Angular development assistant for Claude Code. Generate, review, test, migrate, and document Angular apps following a battle-tested, production-proven structure — updated for Angular 20 standalone-first defaults.
+Angular development assistant — generate, review, test and migrate Angular apps
 
 ## Install
 
