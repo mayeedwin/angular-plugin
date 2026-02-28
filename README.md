@@ -4,27 +4,89 @@ An opinionated Angular development assistant for Claude Code. Generate, review, 
 
 ## Install
 
-### From GitHub (available now)
+> Requires Claude Code v1.0.33 or later. Run `claude --version` to check.
 
-```bash
-# 1. Add the marketplace
+### Option 1 — Inside Claude Code (recommended)
+
+Open Claude Code in any project and run these two commands:
+
+```
+# Step 1: add the marketplace
 /plugin marketplace add mayeedwin/angular-plugin
 
-# 2. Install the plugin
+# Step 2: install the plugin (user scope — available in all your projects)
 /plugin install ng@angular-plugin
 ```
 
-### From Anthropic marketplace (pending review)
+Verify it worked — run `/help` and look for `ng:*` commands in the list.
+
+### Option 2 — CLI (non-interactive)
 
 ```bash
+# Add the marketplace to your user settings
+claude plugin install ng@angular-plugin
+```
+
+### Option 3 — Official Anthropic marketplace (pending review)
+
+Once approved, no marketplace step needed:
+
+```
 /plugin install ng
 ```
 
-### Local development
+### Option 4 — Local development / testing
 
 ```bash
-claude --plugin-dir /path/to/angular-plugin
+git clone https://github.com/mayeedwin/angular-plugin
+claude --plugin-dir ./angular-plugin
 ```
+
+---
+
+## Installation scopes
+
+By default the plugin is installed to your **user** scope — available across all your projects.
+
+| Scope | What it means | Install flag |
+|---|---|---|
+| `user` *(default)* | Available in all your projects | *(no flag needed)* |
+| `project` | Checked into `.claude/settings.json` — shared with your team | `--scope project` |
+| `local` | Project-specific, gitignored | `--scope local` |
+
+**Share with your team** — install at project scope so everyone who clones the repo gets it:
+
+```
+/plugin install ng@angular-plugin --scope project
+```
+
+Or add to `.claude/settings.json` manually so Claude Code prompts teammates on first open:
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "angular-plugin": {
+      "source": { "source": "github", "repo": "mayeedwin/angular-plugin" }
+    }
+  },
+  "enabledPlugins": {
+    "ng@angular-plugin": true
+  }
+}
+```
+
+---
+
+## Manage the plugin
+
+All commands work both inside Claude Code (with `/`) and from the terminal (with `claude plugin`):
+
+| Action | Inside Claude Code | Terminal |
+|---|---|---|
+| Update | `/plugin update ng@angular-plugin` | `claude plugin update ng@angular-plugin` |
+| Disable (keep installed) | `/plugin disable ng@angular-plugin` | `claude plugin disable ng@angular-plugin` |
+| Re-enable | `/plugin enable ng@angular-plugin` | `claude plugin enable ng@angular-plugin` |
+| Uninstall | `/plugin uninstall ng@angular-plugin` | `claude plugin uninstall ng@angular-plugin` |
 
 ## Commands
 
