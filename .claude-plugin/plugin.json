@@ -1,0 +1,13 @@
+{
+  "name": "ng",
+  "version": "0.1.0",
+  "description": "Angular development assistant — generate, review, test and migrate Angular apps following an opinionated, production-proven structure",
+  "author": {
+    "name": "Maye Edwin",
+    "url": "https://github.com/mayeedwin"
+  },
+  "homepage": "https://github.com/mayeedwin/angular-plugin",
+  "repository": "https://github.com/mayeedwin/angular-plugin",
+  "license": "MIT",
+  "keywords": ["angular", "typescript", "ngrx", "rxjs", "standalone", "signals"]
+}

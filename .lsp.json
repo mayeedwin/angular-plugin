@@ -1,0 +1,17 @@
+{
+  "typescript": {
+    "command": "typescript-language-server",
+    "args": ["--stdio"],
+    "extensionToLanguage": {
+      ".ts": "typescript"
+    },
+    "initializationOptions": {
+      "preferences": {
+        "importModuleSpecifierPreference": "non-relative",
+        "includeInlayParameterNameHints": "all",
+        "includeInlayFunctionParameterTypeHints": true,
+        "includeInlayVariableTypeHints": true
+      }
+    }
+  }
+}
