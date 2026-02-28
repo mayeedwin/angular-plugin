@@ -201,7 +201,7 @@ All patterns reference [angular.dev/llms.txt](https://angular.dev/llms.txt).
 
 ## Contributing
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md). Issues and PRs welcome at [github.com/mayeedwin/angular-plugin](https://github.com/mayeedwin/angular-plugin).
+See [CONTRIBUTING.md](./.github/CONTRIBUTING.md). Issues and PRs welcome at [github.com/mayeedwin/angular-plugin](https://github.com/mayeedwin/angular-plugin).
 
 ### Setup (once after cloning)
 
@@ -241,6 +241,10 @@ This repo ships instructions for Claude Code, GitHub Copilot, and other AI agent
 
 When using Claude Code in this repo, it automatically reads `CLAUDE.md` and applies the conventions.
 
+## Privacy
+
+This plugin runs entirely on your local machine — no data collection, no telemetry. See [PRIVACY.md](./PRIVACY.md) for full details.
+
 ## License
 
-[MIT](./LICENSE) © [Maye Edwin](https://github.com/mayeedwin)
+[MIT](./.github/LICENSE) © [Maye Edwin](https://github.com/mayeedwin)

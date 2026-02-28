@@ -45,5 +45,5 @@ bash scripts/install-hooks.sh
 
 - [Opinionated Angular structure](docs/STRUCTURE.md)
 - [Plugin manifest](/.claude-plugin/plugin.json)
-- [Contributing guide](CONTRIBUTING.md)
+- [Contributing guide](.github/CONTRIBUTING.md)
 - [Angular documentation](https://angular.dev/llms.txt)
